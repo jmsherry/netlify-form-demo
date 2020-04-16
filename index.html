@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netlify Form Demo</title>
+  <style>
+    .thing {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <form name="contact" method="POST" data-netlify="true" netlify-honeypot="thing-field">
+    <div class="thing">
+      <label>Maybe not: <input name="thing-field" /></label>
+    </div>
+    <div class="form-row">
+      <label>Your Name: <input type="text" name="name" /></label>
+    </div>
+    <div class="form-row">
+      <label>Your Email: <input type="email" name="email" /></label>
+    </div>
+    <div class="form-row">
+      <label>Subject: <input type="text" name="subject" /></label>
+    </div>
+    <div class="form-row">
+      <label>Message: <textarea name="message"></textarea></label>
+    </div>
+    <div class="form-row">
+      <button type="submit">Send</button>
+    </div>
+  </form>
+</body>
+
+</html>
